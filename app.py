@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_ask import Ask, statement, question, session
 import json
 import requests
@@ -9,8 +9,8 @@ app = Flask(__name__)
 ask = Ask(app, "/reddit_reader")
 
 def get_headlines():
-	user_pass_dict = {'user': 'YOUR_USERNAME',
-						'passwd': 'YOUR_PASSWORD',
+	user_pass_dict = {'user': 'deovikash',
+						'passwd': 'kathmandu',
 						'api_type': 'json'}
 
 	sess = requests.Session()
@@ -29,19 +29,21 @@ def get_headlines():
 # print titles
 
 
+
 @app.route('/')
 def homepage():
 	return "Hello Triconites"
+	
 
-# @app.route('/reddit')
-# def reddit():
-# 	titles = get_headlines()
-# 	return titles
+@app.route('/reddit')
+def reddit():
+	titles = get_headlines()
+	return titles
 
 
 @ask.launch
 def start_skill():
-	welcome_message = 'Hello Triconites, would you like the news?'
+	welcome_message = 'Hello Vikash, would you like the news?'
 	return question(welcome_message)
 
 
@@ -51,7 +53,6 @@ def share_headlines():
 	headlines_msg = 'The Current world news headlines are .... {}'. format(headlines)
 	return statement(headlines_msg)
 
-@ask.intent("YesInten")
 
 @ask.intent("NoIntent")
 def no_intent():
@@ -62,5 +63,3 @@ def no_intent():
 
 if __name__ == '__main__':
 	app.run(debug=True)
-
-
