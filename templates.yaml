@@ -1,5 +1,13 @@
 welcome: Welcome to Tricon Infotech, I am Alexa. Can I please get your name.
 
+welcome_message: Hello, welcome to Tricon Infotech. I am Alexa. Whom are you here to meet?
+
+wait_response: Please be seated. Someone will come to you shortly
+
+no_response: I am sorry. I quite didnt get that. Whom do you want to meet.
+
+personNotFound: I am sorry. Noone works by that name in Tricon
+
 # reprompt: I didn't quite get that. Please state your name again.
 
 
@@ -39,7 +47,3 @@ welcome: Welcome to Tricon Infotech, I am Alexa. Can I please get your name.
 
 
 
-welcome_message: Hello, welcome to Tricon Infotech. I am Alexa. Whom are you here to meet?
-wait_response: Please be seated. Someone will come to you shortly
-no_response: I am sorry. I quite didnt get that. Whom do you want to meet
-personNotFound: I am sorry. Noone works by that name in Tricon
