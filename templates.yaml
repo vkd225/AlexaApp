@@ -1,38 +1,45 @@
 welcome: Welcome to Tricon Infotech, I am Alexa. Can I please get your name.
 
-reprompt: I didn't quite get that. Please state your name again.
+# reprompt: I didn't quite get that. Please state your name again.
 
 
 
 
-goodbye: See you again next time!
+# goodbye: See you again next time!
 
 
 
-latest_review: The latest episode of {{ show }}, called, {{ episode }}, got a score of {{ score }} on IGN.
+# latest_review: The latest episode of {{ show }}, called, {{ episode }}, got a score of {{ score }} on IGN.
 
-reprompt_show: I didn't quite understand that. What show did you want the review from?
+# reprompt_show: I didn't quite understand that. Whom are you here to meet?
 
 
 
-trip_open: Hi there! Are you ready to go on a trip with me?
+# trip_open: Hi there! Are you ready to go on a trip with me?
 
-trip_again: Are you still here? Tell me when you're ready!
+# trip_again: Are you still here? Tell me when you're ready!
 
-trip_start: Okay great!
+# trip_start: Okay great!
 
-trip_city_1: They say {{ city }} is beautiful this time of the year.
+# trip_city_1: They say {{ city }} is beautiful this time of the year.
 
-trip_city_2: A great place to visit might be {{ city }}.
+# trip_city_2: A great place to visit might be {{ city }}.
 
-trip_city_3: Have you ever been to {{ city }}? It's lovely!
+# trip_city_3: Have you ever been to {{ city }}? It's lovely!
 
-trip_city_propose_good: Oh yeah! I haven't been to {{ city }} yet. Great idea.
+# trip_city_propose_good: Oh yeah! I haven't been to {{ city }} yet. Great idea.
 
-trip_city_propose_bad: Hmm. I'm not really feeling like going there. Do you have another proposal?
+# trip_city_propose_bad: Hmm. I'm not really feeling like going there. Do you have another proposal?
 
-trip_weather: In {{ city }}, the weather is currently being described as {{ description }}, with a temperature of {{ temp }} degrees Celsius.
+# trip_weather: In {{ city }}, the weather is currently being described as {{ description }}, with a temperature of {{ temp }} degrees Celsius.
 
-trip_go: Great! I've already booked us a flight for tomorrow! Let's start packing!
+# trip_go: Great! I've already booked us a flight for tomorrow! Let's start packing!
 
-trip_nogo: But I really wanted to go on a trip with you.
+# trip_nogo: But I really wanted to go on a trip with you.
+
+
+
+welcome_message: Hello, welcome to Tricon Infotech. I am Alexa. Whom are you here to meet?
+wait_response: Please be seated. Someone will come to you shortly
+no_response: I am sorry. I quite didnt get that. Whom do you want to meet
+personNotFound: I am sorry. Noone works by that name in Tricon
